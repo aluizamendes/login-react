@@ -14,7 +14,7 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 4px;
 `
 
 export const Title = styled.h2`
@@ -22,4 +22,51 @@ export const Title = styled.h2`
     font-weight: 700;
     font-weight: 600;
     color: #444444;
+    margin-top: 32px;
+    margin-bottom: 20px;
+`
+
+export const SpanDivisor = styled.span`
+    color: #444444;
+    position: relative;
+    text-align: center;
+    margin: 8px 0;
+    width: 100%;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        height: 1px;
+        width: 40%;
+        background-color: #BFC4CA;
+    }
+    
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        height: 1px;
+        width: 40%;
+        background-color: #BFC4CA;
+    }
+`
+
+export const LinksWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    a {
+        font-size: 14px;
+        color: #7F57F1;
+        font-weight: 600;
+        text-decoration: underline;
+    }
 `

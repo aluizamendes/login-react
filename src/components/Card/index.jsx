@@ -2,6 +2,7 @@ import * as S from "./styles"
 import Logo from "src/assets/logo.svg"
 import InputField from "src/components/InputField"
 import Button from "src/components/Button"
+import InputCheckbox from "src/components/CheckboxInput"
 
 export default function Card() {
     return (
@@ -20,8 +21,22 @@ export default function Card() {
                         placeholder="your password"
                     />
 
-                    <Button primary={true}>
+                    <S.LinksWrapper>
+                        <InputCheckbox
+                            name="rememberMe"
+                            label="Remember me"
+                            align="flex-start"
+                        />
+                        <a href="/">Forgot password?</a>
+                    </S.LinksWrapper>
+
+                    <Button primary="true">
                         Log in
+                    </Button>
+
+                    <S.SpanDivisor>or</S.SpanDivisor>
+                    <Button>
+                        Create account
                     </Button>                   
                 </S.Content>
             </S.Container>
