@@ -7,6 +7,10 @@ export const Container = styled.aside`
     border: 1px solid #CCD3E5;
     background-color: #FFF;
     box-shadow: 0px 4px 16px 0px rgba(122, 130, 201, 0.10);
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 export const Content = styled.div`
