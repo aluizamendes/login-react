@@ -73,4 +73,9 @@ export const LinksWrapper = styled.div`
         font-weight: 600;
         text-decoration: underline;
     }
+
+    input {
+        width: 16px;
+        height: 16px;
+    }
 `
