@@ -24,10 +24,10 @@ export const IconContainer = styled.div`
             transition: .5s ;
         }
     }
-
 `
 
 export const Input = styled.input`
+    outline: transparent;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     padding: 12px 48px 12px 16px;
@@ -35,8 +35,13 @@ export const Input = styled.input`
     border: 1px solid #BFC4CA;
     border-radius: 4px;
     margin-bottom: 8px;
+    transition: outline .2s;
 
     &::placeholder {
         color: #C9C9C9;
+    }
+
+    &:focus {
+        outline: 3px solid #8057f142;
     }
 `
